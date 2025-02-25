@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Skecth!!</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button#size{
+            background-color: green;
+            padding: 3mm;
+            border: 1mm solid lightcyan;
+            border-radius: 15px;
+            color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        button#size:hover{
+            color: green;
+            background-color: aliceblue;
+            border-color: green;
+            cursor: pointer;
+        }
+        button#mode{
+            padding: 3mm;
+            border: 1mm solid;
+            border-radius: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        button#mode:hover{
+            cursor: pointer;
+        }
+        div#sketch{
+            display: flex;
+            justify-content: center;
+            width: 480px;
+            height: 480px;
+            border: 1mm solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="butts">
+        <button id="size">Change Size of Canvas</button>
+        <button id="mode"></button>
+    </div>
+    <div id="sketch">
+
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
